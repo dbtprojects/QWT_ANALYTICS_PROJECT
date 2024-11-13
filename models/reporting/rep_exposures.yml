@@ -1,0 +1,20 @@
+version: 2
+
+exposures:
+
+  - name: top10_citiesbysales
+    type: dashboard
+    maturity: high
+    url: https://google.com
+
+    description: repors shows top 10 ciites by sales
+
+    depends_on: 
+      - ref("fct_orders")
+      - ref("dim_customers")
+
+    owner:
+      name: Claire
+      email: data@xyz.com
+
+
